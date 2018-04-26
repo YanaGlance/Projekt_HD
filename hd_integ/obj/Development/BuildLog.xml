@@ -2,23 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>hd_integ</Name>
-    <LastWriteTime>2018-04-26T08:37:33.9900526Z</LastWriteTime>
+    <LastWriteTime>2018-04-26T10:42:56.8439924Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>stage_package.dtsx</Name>
-      <LastWriteTime>2018-04-26T07:43:52.7069148Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2018-04-25T20:53:22.0693989Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>split-data.dtsx</Name>
-      <LastWriteTime>2018-04-26T09:13:26.0921607Z</LastWriteTime>
+      <LastWriteTime>2018-04-26T10:44:26.883969Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
