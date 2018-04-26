@@ -12,825 +12,23 @@
   DTS:LocaleID="1045"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="stage_package"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{25B8A99B-3436-46A2-B56D-824712BA2295}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{A5D72847-6BD4-4294-8688-720FFC2B78C9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:refId="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zelun]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{11E83D8A-9F4C-487C-ADB0-67CEA1CEBFA6}"
-      DTS:ObjectName="DestinationConnectionOLEDB">
+      DTS:DTSID="{F7BD77ED-1868-436B-8BE0-6E0045E29D67}"
+      DTS:ObjectName="hd-wat.database.windows.net.Hurtownie danych.zelun">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=hd-wat.database.windows.net;User ID=zelun;Initial Catalog=Hurtownie danych;Provider=SQLNCLI11.1;Auto Translate=false;">
+          DTS:ConnectionString="Data Source=hd-wat.database.windows.net;User ID=zelun;Initial Catalog=Hurtownie danych;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzs+lZ2PYgEGtYI50x90ACAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABkTnCm5DNI7AsTZafwp/JdqaAMpgxiutcoU/5mOaUsXgAAAAAOgAAAAAIAACAAAACCldXovvPVr5H+Sm9TdrPp7X4K4UfAaNsJk4eNARaiJSAAAAD3zsbB7E3OXxL3J42G9VnyJfg2HUAlc4B3Vx5qCAf6CEAAAAAY41IMm+P0qpf5rtXHG0EL/9RzZLKk+Nk3MWgy7t9Et7YSaLq4AXWBVz2o9pn2ZiyYHT3znNipCR/pGDkEoR0l</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{DCDABE5A-1BA7-437A-8C88-9A3F2EF9347C}"
-      DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\workspace\Projekt_HD\test.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2A9E4E45-B927-474A-AB40-C21D3A5B2873}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\HD_projekt_event tydz 1 listopad 2015_sample.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Date&quot;"
-              DTS:DTSID="{2D0908C2-9ED7-4691-BF65-C15D75651DC6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Channel&quot;"
-              DTS:DTSID="{419E8A00-2FFB-4541-8019-9D7FBC103DF1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Description&quot;"
-              DTS:DTSID="{A89F97D5-BA4A-4062-9675-2C7074D34BFE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;2nd Description&quot;"
-              DTS:DTSID="{8B94457D-D13E-4038-A840-9E0EFFA0AB57}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Start time&quot;"
-              DTS:DTSID="{0DD0A507-729E-4AED-8567-034D862B8124}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Duration&quot;"
-              DTS:DTSID="{AAA174DB-AEAE-4114-B302-18694074174C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Variable Target&quot;"
-              DTS:DTSID="{89F8CE3D-EAD8-4C18-93F6-CB08E44A1FAF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Total Individuals&quot;"
-              DTS:DTSID="{1FD27368-F9CF-4F0F-B9C0-B513BE7936ED}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Podgrupa&quot;"
-              DTS:DTSID="{D6A9B980-5779-45FE-9E88-8A6779D9ABA3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A16-49&quot;"
-              DTS:DTSID="{81A43BA4-59A9-461E-82B0-46112C5DE7A0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;M16-49&quot;"
-              DTS:DTSID="{BFAF0D7B-C709-470D-BA67-57F749A397C0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-15&quot;"
-              DTS:DTSID="{00CEAD9F-589F-418E-B21D-677B88AC2073}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-9&quot;"
-              DTS:DTSID="{4E669832-2BE8-457F-A174-0CFE05C02F24}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B7991672-FA09-4542-B06C-BA8980C3916C}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\test.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Date&quot;"
-              DTS:DTSID="{C2C57F3F-D1A4-41AA-8265-F9E588FAA70C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Channel&quot;"
-              DTS:DTSID="{3E5C5D9E-A62B-40C2-880A-5ACCAB56C13B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Description&quot;"
-              DTS:DTSID="{D190F2FC-F135-44FE-BB01-228D409A0C04}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;2nd Description&quot;"
-              DTS:DTSID="{9E1A6814-8363-44EF-9FFC-99EDE493A0AA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Start time&quot;"
-              DTS:DTSID="{300A5A4D-EC75-4019-ADAD-2F520719FF23}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Duration&quot;"
-              DTS:DTSID="{4AA3E7F9-5A5F-4A40-AE57-0D0520EC0533}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Variable Target&quot;"
-              DTS:DTSID="{76A6D656-30CD-4100-AD7C-00FE426A6D7B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Total Individuals&quot;"
-              DTS:DTSID="{9E7666C1-71BF-4F63-B21F-E27337A5B68A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Podgrupa&quot;"
-              DTS:DTSID="{52216A16-955B-412A-A7C1-E96F6747A1EE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A16-49&quot;"
-              DTS:DTSID="{9A337189-C216-4FEF-9E83-2C57F313A60B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;M16-49&quot;"
-              DTS:DTSID="{8453B99C-2978-4358-858F-73E2BD2FB0C8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-15&quot;"
-              DTS:DTSID="{CBB7D388-5E22-414F-B6FB-7134E15333C9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-9&quot;"
-              DTS:DTSID="{8B4BD02B-31E1-4838-8F46-29814A6535E0}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{72FC4DDE-FE33-4309-8842-3A930E372B46}"
-      DTS:ObjectName="Flat File Connection Manager 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\media-time.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Date&quot;"
-              DTS:DTSID="{D991AD92-BE21-4F2B-9280-6B15FAA7F709}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Channel&quot;"
-              DTS:DTSID="{AFDE637E-7B30-4FC2-8EAE-C08FC8807849}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Description&quot;"
-              DTS:DTSID="{BCD7DB78-3301-4AC7-81FD-09562906CD71}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;2nd Description&quot;"
-              DTS:DTSID="{40E7F1E2-2371-46B5-98B5-0FC6A577A9B1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Start time&quot;"
-              DTS:DTSID="{A96D8658-1E7D-4F09-BC39-E1B22D34AEAA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Duration&quot;"
-              DTS:DTSID="{8068D7C5-D3F4-4FEC-AB14-FA03B7042D69}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Variable Target&quot;"
-              DTS:DTSID="{729538C1-A822-4527-ACC2-E92971D3AC66}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Total Individuals&quot;"
-              DTS:DTSID="{1B43A660-0BE5-4D18-8B50-E5A34C5858C8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Podgrupa&quot;"
-              DTS:DTSID="{3F76359D-FA02-461E-9A8B-51A2BF2F0A8A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A16-49&quot;"
-              DTS:DTSID="{1F9F72FD-87D5-4098-B4D1-C47CA9C950AA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;M16-49&quot;"
-              DTS:DTSID="{961D4221-DE65-4975-96CF-96C9DEE3E23F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-15&quot;"
-              DTS:DTSID="{3CF018D6-DA1B-40B2-88B0-775F9CB5B143}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-9&quot;"
-              DTS:DTSID="{A60244DC-6053-47C6-9B0E-A5B6CB394D80}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Column 13"
-              DTS:DTSID="{659A987D-1DBD-4F05-8FF9-9BEB01C86593}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="18"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Second"
-              DTS:DTSID="{D16A8539-748E-4D95-9AB7-CCD6AF17526F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="18"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Minute"
-              DTS:DTSID="{0BBE4640-C8D0-4193-B2EC-6739E5523240}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="131"
-              DTS:DataPrecision="18"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Hour"
-              DTS:DTSID="{AB9028D1-537A-4A65-AE04-E842EB387E39}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{1BE9FA65-A1E4-4EC6-8FB6-83B4669CFB4B}"
-      DTS:ObjectName="Flat File Connection Manager 3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\media-time.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Second"
-              DTS:DTSID="{BB286661-C48A-413E-9639-6F1D4D436E09}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Minute"
-              DTS:DTSID="{A16415A3-AB76-4039-BDA2-7D91ABEC13CF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Hour"
-              DTS:DTSID="{BF0EF13F-4A22-4C18-A6CC-27B5EF847179}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{9A922C24-C413-4894-8BC4-9EC66FA4BA98}"
-      DTS:ObjectName="Flat File Connection Manager 4">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\pivoted.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Start_time_Sorted&quot;"
-              DTS:DTSID="{5B8CBA0E-E217-46CB-B05A-C46AD6D037B5}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 5]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{259672C3-EAF7-4B2F-BC54-6B5826398F61}"
-      DTS:ObjectName="Flat File Connection Manager 5">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\HD_projekt_event tydz 1 listopad 2015_sample — kopia.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Date&quot;"
-              DTS:DTSID="{DB10050F-46EB-448E-BB66-EC867DB20A87}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Channel&quot;"
-              DTS:DTSID="{EC5E6CE7-2145-4DD8-B4D7-6999FD5C3E3B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Description&quot;"
-              DTS:DTSID="{F059A2D0-D4F7-468D-9C91-E2F2AF6C7764}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;2nd Description&quot;"
-              DTS:DTSID="{E9120C5A-B425-40AF-A1B6-0E1D37D91116}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Start time&quot;"
-              DTS:DTSID="{C1904B29-8598-40D4-891B-F434539B17DB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Duration&quot;"
-              DTS:DTSID="{DA305B3F-5612-4636-8B7B-3F1A9DD62DAB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Variable Target&quot;"
-              DTS:DTSID="{9CC848F8-1A4D-40EF-B1F1-AA3A2755D5F6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Total Individuals&quot;"
-              DTS:DTSID="{18E9D9D6-549F-409F-AA41-84074F7E751F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Podgrupa&quot;"
-              DTS:DTSID="{72A379B0-707B-419B-9FAA-2E7B9F216ABB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A16-49&quot;"
-              DTS:DTSID="{244EB7BF-08BE-431D-8850-2588DFEB5CE6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;M16-49&quot;"
-              DTS:DTSID="{407A6FF8-3D29-4E48-ABA7-DBFADB35399C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-15&quot;"
-              DTS:DTSID="{33066C2C-68DB-42D0-B3D5-DA4A3AD0DFED}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-9&quot;"
-              DTS:DTSID="{F1719C41-F126-44EB-9F3B-B8FA117B6052}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 6]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{3F395BC8-9BFF-4DA3-999B-A9BB79B3C0A3}"
-      DTS:ObjectName="Flat File Connection Manager 6">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="E:\workspace\Projekt_HD\testInput.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Variable Target&quot;"
-              DTS:DTSID="{565B5A17-3B62-4BE4-81B9-F0DA3ADD813E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Total Individuals&quot;"
-              DTS:DTSID="{8ED54E8A-B3DC-448E-A535-10538500AF07}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;Podgrupa&quot;"
-              DTS:DTSID="{88F3CACE-0087-4A46-95C5-E5A6A61BFF2C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A16-49&quot;"
-              DTS:DTSID="{D8585737-9351-4364-9470-DF94CEE0AED1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;M16-49&quot;"
-              DTS:DTSID="{09F1D5E5-5028-45B3-B1EA-4AA88099E9F2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-15&quot;"
-              DTS:DTSID="{E4A9B6F3-41D9-4D30-9828-E0E0FE0832AF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="&quot;A4-9&quot;"
-              DTS:DTSID="{0E281A7F-8DFF-484A-88EA-0BF7C0D567D0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Out_Description"
-              DTS:DTSID="{7108157B-FC2F-4E29-97F4-2831548587DE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Out_Channel"
-              DTS:DTSID="{1EC03B7E-3458-4DA5-83E0-17299C26992F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Out_Date"
-              DTS:DTSID="{259679B2-C0BD-4146-97D0-6EDBE496B868}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Out_Duration"
-              DTS:DTSID="{75150039-A952-4D89-9458-DFF3D929B9A7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Out_Start_Time"
-              DTS:DTSID="{DB3C54FB-3711-4160-8EE1-60AE75A52DF0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Out_Description_2"
-              DTS:DTSID="{0092437C-34DE-4353-82CF-1635E78C173C}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzs+lZ2PYgEGtYI50x90ACAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABhWTX48aIX67K1ZjHT5g17joOql0mQr9yFfP5eOriTGQAAAAAOgAAAAAIAACAAAABK6z85IqirAbJ7U5HgzSG4r5iyLmfKS6LHP6OVshXsoyAAAACcMeDeSqlOmpMcLXZ5QyYh41RgMwGk+6rh6JOX38KrKUAAAADQF9GmGoYnffjRuQxVCxZnU7ZFpDz1WxpLF88IUDINSucBuBvWH1AyK1zsB/e8zeWimuAJeQYQ9oRadwub2UAC</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -847,7 +45,7 @@
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
+          DTS:CodePage="1252"
           DTS:ConnectionString="C:\Users\Piotr\Documents\Studia\HD_projekt_event tydz 1 listopad 2015_sample.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
@@ -857,7 +55,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Date&quot;"
-              DTS:DTSID="{E7616373-1216-422B-9E43-7C9B36684C31}"
+              DTS:DTSID="{158D871D-F70A-4284-95F1-74DA6805BC73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -866,7 +64,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Channel&quot;"
-              DTS:DTSID="{056FD5B3-FD66-406E-8AE9-FA3A028E3A1A}"
+              DTS:DTSID="{394E8C62-2661-414D-ABD4-926494D38904}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -875,7 +73,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Description&quot;"
-              DTS:DTSID="{200994C3-EB75-481B-A856-394962C1646A}"
+              DTS:DTSID="{D756B06F-D997-4B2A-9015-1900A9553D69}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -884,7 +82,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;2nd Description&quot;"
-              DTS:DTSID="{B226DBDA-882D-4EC1-B113-14E84CDC07AD}"
+              DTS:DTSID="{00F81851-3A8F-4CC9-BA6C-8D14440B9560}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -893,7 +91,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Start time&quot;"
-              DTS:DTSID="{A525097F-CC79-4670-9098-0D51C68A3C0E}"
+              DTS:DTSID="{C5008878-849C-4320-BC47-6F053EFAA92B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -902,7 +100,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Duration&quot;"
-              DTS:DTSID="{D8ECF7A5-8EB6-4294-A1E8-795C3740EE9E}"
+              DTS:DTSID="{F963D0E7-4A15-448C-B87C-24BD5FB0093E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -911,7 +109,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Variable Target&quot;"
-              DTS:DTSID="{598D4BFA-DE2D-49A1-879E-C616B0A7E27D}"
+              DTS:DTSID="{A6AA70FD-30E0-402F-B3F4-6B9B4B5D6A1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -920,7 +118,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Total Individuals&quot;"
-              DTS:DTSID="{15B7EDF7-52F9-47DB-AF96-A1384A6FACA4}"
+              DTS:DTSID="{253107C2-5053-4E04-8206-2046F436253E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -929,7 +127,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Podgrupa&quot;"
-              DTS:DTSID="{2F3D84B1-23CB-4742-BA43-AEC54C00E441}"
+              DTS:DTSID="{CB4038A2-0561-4729-AB67-2B90611736FB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -938,7 +136,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;A16-49&quot;"
-              DTS:DTSID="{B45DE2B1-C68F-490F-8224-8B6BE7EB947D}"
+              DTS:DTSID="{FA2CEA88-DEDC-4730-954B-376372FDE246}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -947,7 +145,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;M16-49&quot;"
-              DTS:DTSID="{88CE7B98-E6D6-422E-8BF1-A3A3B98B2606}"
+              DTS:DTSID="{A3F651CD-9DB5-4B0C-9E34-6191B29EE2AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -956,7 +154,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;A4-15&quot;"
-              DTS:DTSID="{68A5EA42-1475-46E0-9B1D-334E7EC08059}"
+              DTS:DTSID="{7A8FBE3C-4F93-4D56-9525-EF7D9A2F6BF7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -965,7 +163,144 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;A4-9&quot;"
-              DTS:DTSID="{3468155F-41E2-46A3-B0A7-98C09F215AC8}"
+              DTS:DTSID="{F7CF12D4-452E-4710-8D72-FDE8B4060DFB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[StageCleared]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7EB8DBB6-0BE5-402A-A7F2-F011121E200F}"
+      DTS:ObjectName="StageCleared">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\workspace\Projekt_HD\StageFilled.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Date&quot;"
+              DTS:DTSID="{A8E5BF7B-9537-43DE-BBF3-D2FF582D4799}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Channel&quot;"
+              DTS:DTSID="{6890FB4F-3375-4271-88D1-BC8938033F14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Description&quot;"
+              DTS:DTSID="{6FFFBA5E-22A3-484B-8915-48EBDBFBA017}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;ndDescription&quot;"
+              DTS:DTSID="{4FDE2EDF-45F5-4CFF-B7B8-5472500C2753}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;StartTime&quot;"
+              DTS:DTSID="{D3CABEA9-BBC6-4EFB-99D8-4B4CFF5C8A77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Duration&quot;"
+              DTS:DTSID="{7F241162-21FC-4D65-8D24-03C2C4ACFE8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;VariableTarget&quot;"
+              DTS:DTSID="{5F55D6B8-9C34-4047-9932-8820929ED409}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;TotalIndividuals&quot;"
+              DTS:DTSID="{36A458DD-4CBE-417F-B31A-CEF8B2769A7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Podgrupa&quot;"
+              DTS:DTSID="{37F98755-1758-47B1-891B-E85FB14C8DD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;A16-49&quot;"
+              DTS:DTSID="{80DB9899-2167-4110-8519-762546BDE661}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;M16-49&quot;"
+              DTS:DTSID="{04BA18D0-E623-4D91-99A1-9118FEAF0AFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;A4-15&quot;"
+              DTS:DTSID="{4AC4CD21-2192-486E-93FE-6B502D9CC934}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;A4-9&quot;"
+              DTS:DTSID="{716CB135-9014-467B-A590-D76DE21B5931}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1011,8 +346,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task 1\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[StageCleared]"
+                  connectionManagerRefId="Package.ConnectionManagers[StageCleared]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -1022,64 +357,56 @@
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;Variable Target&quot;]"
-                      cachedCodepage="1250"
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;TotalIndividuals&quot;]"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
-                      cachedName="&quot;Variable Target&quot;"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Variable Target&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;Total Individuals&quot;]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="&quot;Total Individuals&quot;"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Total Individuals&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]" />
+                      cachedName="&quot;TotalIndividuals&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;TotalIndividuals&quot;]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;TotalIndividuals&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;Podgrupa&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;Podgrupa&quot;"
                       externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Podgrupa&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Podgrupa&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;A16-49&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;A16-49&quot;"
                       externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;A16-49&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A16-49&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;M16-49&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;M16-49&quot;"
                       externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;M16-49&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;M16-49&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;A4-15&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;A4-15&quot;"
                       externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;A4-15&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-15&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[&quot;A4-9&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;A4-9&quot;"
                       externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;A4-9&quot;]"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-9&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_Date]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Out_Date"
@@ -1087,7 +414,7 @@
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_Channel]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Out_Channel"
@@ -1095,7 +422,7 @@
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Channel]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_Description]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Out_Description"
@@ -1103,106 +430,114 @@
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Description]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_Description_2]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Out_Description_2"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;2nd Description&quot;]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;ndDescription&quot;]"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Description_2]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_Start_Time]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Out_Start_Time"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Start time&quot;]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;StartTime&quot;]"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Start_Time]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_Duration]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Out_Duration"
                       externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Duration&quot;]"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Duration]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Out_VariableTarget]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Out_VariableTarget"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;VariableTarget&quot;]"
+                      lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_VariableTarget]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Date&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;Date&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Channel&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;Channel&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Description&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;Description&quot;" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;2nd Description&quot;]"
-                      codePage="1250"
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;ndDescription&quot;]"
+                      codePage="1252"
                       dataType="str"
                       length="100"
-                      name="&quot;2nd Description&quot;" />
+                      name="&quot;ndDescription&quot;" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Start time&quot;]"
-                      codePage="1250"
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;StartTime&quot;]"
+                      codePage="1252"
                       dataType="str"
                       length="100"
-                      name="&quot;Start time&quot;" />
+                      name="&quot;StartTime&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Duration&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;Duration&quot;" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Variable Target&quot;]"
-                      codePage="1250"
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;VariableTarget&quot;]"
+                      codePage="1252"
                       dataType="str"
                       length="100"
-                      name="&quot;Variable Target&quot;" />
+                      name="&quot;VariableTarget&quot;" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Total Individuals&quot;]"
-                      codePage="1250"
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;TotalIndividuals&quot;]"
+                      codePage="1252"
                       dataType="str"
                       length="100"
-                      name="&quot;Total Individuals&quot;" />
+                      name="&quot;TotalIndividuals&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;Podgrupa&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;Podgrupa&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;A16-49&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;A16-49&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;M16-49&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;M16-49&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;A4-15&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;A4-15&quot;" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[&quot;A4-9&quot;]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       name="&quot;A4-9&quot;" />
@@ -1237,6 +572,406 @@
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 2"
                   synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zelun]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zelun]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Date&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Date&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Date&quot;]"
+                      name="&quot;Date&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Channel&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Channel&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Channel&quot;]"
+                      name="&quot;Channel&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Description&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Description&quot;]"
+                      name="&quot;Description&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;ndDescription&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;2nd Description&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;ndDescription&quot;]"
+                      name="&quot;ndDescription&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;StartTime&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Start time&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;StartTime&quot;]"
+                      name="&quot;StartTime&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Duration&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Duration&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Duration&quot;]"
+                      name="&quot;Duration&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;VariableTarget&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Variable Target&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;VariableTarget&quot;]"
+                      name="&quot;VariableTarget&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;TotalIndividuals&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Total Individuals&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;TotalIndividuals&quot;]"
+                      name="&quot;TotalIndividuals&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Podgrupa&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Podgrupa&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Podgrupa&quot;]"
+                      name="&quot;Podgrupa&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;A16-49&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A16-49&quot;]"
+                      name="&quot;A16-49&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;M16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;M16-49&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;M16-49&quot;]"
+                      name="&quot;M16-49&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-15&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;A4-15&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-15&quot;]"
+                      name="&quot;A4-15&quot;"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-9&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;A4-9&quot;]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-9&quot;]"
+                      name="&quot;A4-9&quot;"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Date&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Date&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Channel&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Channel&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Description&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;2nd Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;2nd Description&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Start time&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Start time&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Duration&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Duration&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Variable Target&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Variable Target&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Total Individuals&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Total Individuals&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;Podgrupa&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;Podgrupa&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;A16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;A16-49&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;M16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;M16-49&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;A4-15&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;A4-15&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[&quot;A4-9&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="&quot;A4-9&quot;" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Date&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Date&quot;]"
+                      name="&quot;Date&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Channel&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Channel&quot;]"
+                      name="&quot;Channel&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Description&quot;]"
+                      name="&quot;Description&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;2nd Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;2nd Description&quot;]"
+                      name="&quot;2nd Description&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Start time&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Start time&quot;]"
+                      name="&quot;Start time&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Duration&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Duration&quot;]"
+                      name="&quot;Duration&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Variable Target&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Variable Target&quot;]"
+                      name="&quot;Variable Target&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Total Individuals&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Total Individuals&quot;]"
+                      name="&quot;Total Individuals&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Podgrupa&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;Podgrupa&quot;]"
+                      name="&quot;Podgrupa&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;A16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;A16-49&quot;]"
+                      name="&quot;A16-49&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;M16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;M16-49&quot;]"
+                      name="&quot;M16-49&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;A4-15&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;A4-15&quot;]"
+                      name="&quot;A4-15&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;A4-9&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[&quot;A4-9&quot;]"
+                      name="&quot;A4-9&quot;" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -1576,60 +1311,86 @@ public class ScriptMain : UserComponent
     ///  Row.ZipCode = zipCode
     /// </summary>
     /// <param name="Row">The row that is currently passing through the component</param>
+    int index = 0;
     public override void Input0_ProcessInputRow(Input0Buffer Row)
     {
-        if(Row.Date == "" || Row.Date_IsNull)
+        if (Row.Date == "" || Row.Date_IsNull)
         {
             Row.OutDate = date;
-        } else
+        }
+        else
         {
             Row.OutDate = Row.Date;
             date = Row.Date;
         }
 
-        if(Row.Channel == "" || Row.Channel_IsNull)
+        if (Row.Channel == "" || Row.Channel_IsNull)
         {
             Row.OutChannel = channel;
-        } else
+        }
+        else
         {
             Row.OutChannel = Row.Channel;
             channel = Row.Channel;
         }
-        if(Row.Description == "" || Row.Description_IsNull)
+        if (Row.Description == "" || Row.Description_IsNull)
         {
             Row.OutDescription = description;
-        } else
+        }
+        else
         {
             Row.OutDescription = Row.Description;
             description = Row.Description;
         }
-        if(Row.ndDescription == "" || Row.ndDescription == " " || Row.ndDescription_IsNull)
+        if (Row.ndDescription == "" || Row.ndDescription_IsNull)
         {
             Row.OutDescription2 = description2;
-        } else
+        }
+        else
         {
             Row.OutDescription2 = Row.ndDescription;
             description2 = Row.ndDescription;
         }
-        if(Row.Duration == "" || Row.Duration_IsNull)
+        if (Row.Duration == "" || Row.Duration_IsNull)
         {
             Row.OutDuration = duration;
-        } else
+        }
+        else
         {
             Row.OutDuration = Row.Duration;
             duration = Row.Duration;
         }
-        if(Row.Starttime == "" || Row.Starttime_IsNull)
+        if (Row.StartTime == "" || Row.StartTime_IsNull)
         {
             Row.OutStartTime = startTime;
-        } else
-        {
-            Row.OutStartTime = Row.Starttime;
-            startTime = Row.Starttime;
         }
-
+        else
+        {
+            Row.OutStartTime = Row.StartTime;
+            startTime = Row.StartTime;
+        }
+        if(index == 0)
+        {
+            Row.OutVariableTarget = Row.VariableTarget;
+        }
+        else if (index == 1)
+        {
+            Row.OutVariableTarget = "AMR-perct";
+        }
+        else if (index == 2)
+        {
+            Row.OutVariableTarget = "SHR-perct";
+        }
+        else if (index == 3)
+        {
+            Row.OutVariableTarget = "RCH-perct";
+        }
+        else if (index == 4)
+        {
+            Row.OutVariableTarget = "RCH";
+        }
+        index = (index + 1) % 5;
     }
-
 }
 ]]></arrayElement>
                     <arrayElement
@@ -1717,14 +1478,14 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String Starttime
+    public String StartTime
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[4]);
         }
     }
-    public bool Starttime_IsNull
+    public bool StartTime_IsNull
     {
         get
         {
@@ -1984,6 +1745,28 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
+    public String OutVariableTarget
+    {
+        set
+        {
+            this[19] = value;
+        }
+    }
+    public bool OutVariableTarget_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(19);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
     new public bool NextRow()
     {
         return base.NextRow();
@@ -2112,7 +1895,7 @@ namespace SC_b7e7751c440a4ecf9d36946e2b273803.Properties {
     <msb:CodeName>SC_b7e7751c440a4ecf9d36946e2b273803</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_b7e7751c440a4ecf9d36946e2b273803</msb:DisplayName>
-    <msb:ProjectId>{A4D4ECDC-79DA-4A5A-9E0A-CDA5D29AC059}</msb:ProjectId>
+    <msb:ProjectId>{9B702C58-7574-49EA-8AAB-1D5303F922E1}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_b7e7751c440a4ecf9d36946e2b273803.csproj" />
@@ -2279,158 +2062,167 @@ using System.Runtime.CompilerServices;
                     <arrayElement
                       dataType="System.String"><![CDATA[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
-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
+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
-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
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMw8AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-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
+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
-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
-ABoASyUAAAAAkRjGBsgAGgAAAAEAvwgAAAEApQYAAAIAnAcAAAMAeQYAAAEAQwMAAAEAQwMAAAEA
-QwMAAAEAQwMAAAEAQwMAAAEAQwMAAAEAQwMAAAEAQwMAAAEAQwMAAAEAQwMAAAEAQwMAAAEAQwMA
-AAEAdAAAAAIAxgAAAAMApQYAAAQAeQYAAAEApQYAAAEAvwgAAAEASAgAAAEASAgAAAEAQwMJAMAG
-AQARAMAGBgAZAMAGCgApAMAGEAAxAMAGEAA5AMAGEABBAMAGEABJAMAGEABRAMAGEABZAMAGEABh
-AMAGEABpAMAGBgCZAMAGBgC5AMAGFQDJAMAGBgCJACwDBgCJADcDBgDRANAIGwBxAMAGIQBxAKUG
-KwBxAJwHLwB5AGMDMwBxAFsFOABxAGoFPQBxAGIFAQDZAMAGEABxALsIQwBxAAwIQwCJAMAGBgDR
-AN8HRwCJALAHTgCRAMAGBgDpALQAVADpAMMIWwChAMAGYADBAMAGBgAuAAsA4wAuABMA7AAuABsA
-CwEuACMAFAEuACsAPQEuADMAPQEuADsAPQEuAEMAFAEuAEsAQwEuAFMAPQEuAFsAWgFDAGMApAHj
-AGsApAGhAXsApAHpBHMACwEJBXMACwEDAAEABwAnAAgAKQAAAG8BzAAAAIIE0AAAAJYDzAAAAKgE
-0AAAADYGzAAAABkF0AAAACEGzAAAAP0E0AAAAO8AzAAAAFoE0AAAAKUFzAAAANIE0AAAAP0HzAAA
-AEwF0AAAAM4HzAAAADAF0AAAAIAAzAAAAC4E0AAAAFMAzAAAAP0D0AAAAF0AzAAAAA4E0AAAAEoA
-zAAAAO0D0AAAAGcAzAAAAB8E0AAAADMGzAAAABYF0AAAAJMDzAAAAKUE0AAAAGwBzAAAAH8E0AAA
-AKIFzAAAAM8E0AAAANQAzAAAAEIE0AAAAAUAzAAAANID0AAAALAG1AAAAD8B2QAAABwI3gACAAYA
-AwACAAcABQACAAgABwACAAkACQACAAoACwACAAsADQACAAwADwACAA0AEQACAA4AEwACAA8AFQAC
-ABAAFwACABEAGQACABIAGwACABMAHQACABQAHwACABUAIQACABYAIwACABcAJQACABgAJwACABkA
-KQACABoAKwACABsALQACABwALwACAB0AMQACAB4AMwACAB8ANQABACAANwABACEAOQABACIAOwAB
-ACMAPQABACQAPwABACUAQQABACYAQwABACcARQABACgARwABACkASQABACoASwABACsATQACADUA
-TwACADYAUQABADcAUQACADgAUwAEgAAAAQAAAAAAAAAAAAAAAAAiAAAABAAAAAAAAAAAAAAAZwCJ
-AAAAAAAOAAAAAAAAAAAAAABwAFIIAAAAAA4AAAAAAAAAAAAAAHAAbwgAAAAABAAAAAAAAAAAAAAA
-ZwBzBQAAAAAAAAAAAQAAABEHAAAAAAAAAHNldF9PdXREZXNjcmlwdGlvbjIAZGVzY3JpcHRpb24y
-AFNDX2I3ZTc3NTFjNDQwYTRlY2Y5ZDM2OTQ2ZTJiMjczODAzAGdldF9BNDE1AGdldF9BMTY0OQBn
-ZXRfTTE2NDkAZ2V0X0E0OQA8TW9kdWxlPgBJbnB1dElEAGdldF9Qb2RncnVwYQBtc2NvcmxpYgBk
-ZWZhdWx0SW5zdGFuY2UAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUASW5wdXRO
-YW1lAHNldF9PdXRTdGFydFRpbWUAc3RhcnRUaW1lAGdldF9TdGFydHRpbWUATWljcm9zb2Z0LlNx
-bFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJj
-ZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAZ2V0X0RhdGUAc2V0X091dERhdGUAZGF0
-ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dl
-ck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxl
-QXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1
-dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0
-ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRy
-aWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRl
-AFNTSVNTY3JpcHRDb21wb25lbnRFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0
-dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBQcmVFeGVjdXRlAFBvc3RFeGVj
-dXRlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAFN5c3RlbS5Db21w
-b25lbnRNb2RlbABnZXRfQ2hhbm5lbABzZXRfT3V0Q2hhbm5lbABjaGFubmVsAFNDX2I3ZTc3NTFj
-NDQwYTRlY2Y5ZDM2OTQ2ZTJiMjczODAzLmRsbABzZXRfT3V0RGVzY3JpcHRpb24yX0lzTnVsbABn
-ZXRfQTQxNV9Jc051bGwAZ2V0X0ExNjQ5X0lzTnVsbABnZXRfTTE2NDlfSXNOdWxsAGdldF9BNDlf
-SXNOdWxsAGdldF9Qb2RncnVwYV9Jc051bGwAc2V0X091dFN0YXJ0VGltZV9Jc051bGwAZ2V0X1N0
-YXJ0dGltZV9Jc051bGwAZ2V0X0RhdGVfSXNOdWxsAHNldF9PdXREYXRlX0lzTnVsbABnZXRfQ2hh
-bm5lbF9Jc051bGwAc2V0X091dENoYW5uZWxfSXNOdWxsAGdldF9EdXJhdGlvbl9Jc051bGwAc2V0
-X091dER1cmF0aW9uX0lzTnVsbABnZXRfRGVzY3JpcHRpb25fSXNOdWxsAGdldF9uZERlc2NyaXB0
-aW9uX0lzTnVsbABzZXRfT3V0RGVzY3JpcHRpb25fSXNOdWxsAGdldF9Ub3RhbEluZGl2aWR1YWxz
-X0lzTnVsbABnZXRfVmFyaWFibGVUYXJnZXRfSXNOdWxsAFNldE51bGwAc2V0X0l0ZW0AU3lzdGVt
-AHJlc291cmNlTWFuAFNjcmlwdE1haW4AZ2V0X0R1cmF0aW9uAHNldF9PdXREdXJhdGlvbgBkdXJh
-dGlvbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVm
-bGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAGdldF9EZXNjcmlwdGlvbgBnZXRfbmRE
-ZXNjcmlwdGlvbgBzZXRfT3V0RGVzY3JpcHRpb24AZGVzY3JpcHRpb24AU3RyaW5nQ29tcGFyaXNv
-bgBDdWx0dXJlSW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABJbnB1dDBCdWZmZXIAUGlwZWxp
-bmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIALmN0b3IALmNjdG9yAFN5
-c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5S
-ZXNvdXJjZXMAU0NfYjdlNzc1MWM0NDBhNGVjZjlkMzY5NDZlMmIyNzM4MDMuUHJvcGVydGllcy5S
-ZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2I3ZTc3NTFjNDQwYTRlY2Y5ZDM2
-OTQ2ZTJiMjczODAzLlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0
-Q29sdW1uSW5kZXhlcwBTZXR0aW5ncwBnZXRfVG90YWxJbmRpdmlkdWFscwBFcXVhbHMAQ29ubmVj
-dGlvbnMAT2JqZWN0AGdldF9WYXJpYWJsZVRhcmdldABFbmRPZlJvd3NldABnZXRfRGVmYXVsdABV
-c2VyQ29tcG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQATWljcm9zb2Z0LlNx
-bFNlcnZlci5UeFNjcmlwdABNaWNyb3NvZnQuU3FsU2VydmVyLlBpcGVsaW5lSG9zdABJbnB1dDBf
-UHJvY2Vzc0lucHV0AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBnZXRfQXNzZW1ibHkA
-b3BfRXF1YWxpdHkAAAEAAyAAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEA
-bgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAg
-AGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEA
-ZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfAGIANwBlADcANwA1ADEAYwA0ADQAMABhADQAZQBj
-AGYAOQBkADMANgA5ADQANgBlADIAYgAyADcAMwA4ADAAMwAuAFAAcgBvAHAAZQByAHQAaQBlAHMA
-LgBSAGUAcwBvAHUAcgBjAGUAcwAAAADHLocBggI8RY+CAfpMmTuaAAQgAQEIAyAAAQUgAQEREQQg
-AQEOBSABARFZBQACAg4OCSADARI9HQgSQQMGEj0DBh0IBCABDggEIAECCAUgAgEIHAMgAAIGIAIC
-DhFxBSABHQgIBgABEnUReQQgABJ9BiACAQ4SfQi3elxWGTTgiQiJhF3NgIDMkQIGDgMGEhQDBhIY
-AwYSRQMGElEDBhJVAwYSIAUgAQESDAMgAA4EIAEBAgkgBAEIDhI9EkEFIAEBEkUEAAASUQQAABJV
-BQABARJVBAAAEiADAAABAygADgMoAAIECAASUQQIABJVBAgAEiAIAQAIAAAAAAAeAQABAFQCFldy
-YXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDX2I3ZTc3NTFjNDQwYTRlY2Y5ZDM2
-OTQ2ZTJiMjczODAzAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABouTkVURnJhbWV3
-b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsg
-NC41BAEAAAAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFk
-ZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5
-VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNl
-dAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAApDsAAAAAAAAAAAAAvjsAAAAgAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAALA7AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB
-ABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAA
-WEAAAOwDAAAAAAAAAAAAAOwDNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9
-BO/+AAABAAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEA
-VgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAA
-AAAAsARMAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAAoAwAAAQAwADAAMAAwADAA
-NABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4AeQBO
-AGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMA
-QwBfAGIANwBlADcANwA1ADEAYwA0ADQAMABhADQAZQBjAGYAOQBkADMANgA5ADQANgBlADIAYgAy
-ADcAMwA4ADAAMwAAADAACAABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgAwAC4A
-MAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AYgA3AGUANwA3ADUAMQBj
-ADQANAAwAGEANABlAGMAZgA5AGQAMwA2ADkANAA2AGUAMgBiADIANwAzADgAMAAzAC4AZABsAGwA
-AABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAg
-AEAAIAAgADIAMAAxADgAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABlAG0AYQByAGsAcwAAAAAA
-AAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAEMAXwBiADcAZQA3
-ADcANQAxAGMANAA0ADAAYQA0AGUAYwBmADkAZAAzADYAOQA0ADYAZQAyAGIAMgA3ADMAOAAwADMA
-LgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AYgA3AGUANwA3
-ADUAMQBjADQANAAwAGEANABlAGMAZgA5AGQAMwA2ADkANAA2AGUAMgBiADIANwAzADgAMAAzAAAA
-NAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAADgACAAB
-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
+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
+AEMDAAABAEMDAAABAEMDAAABAEMDAAABAEMDAAABAEMDAAABAEMDAAABAEMDAAABAEMDAAABAEMD
+AAABAEMDAAABAEMDAAABAEMDAAABAHQAAAACAMYAAAADAMIGAAAEAJYGAAABAMIGAAABAPIIAAAB
+AHsIAAABAHsIAAABAEMDCQDdBgEAEQDdBgYAGQDdBgoAKQDdBhAAMQDdBhAAOQDdBhAAQQDdBhAA
+SQDdBhAAUQDdBhAAWQDdBhAAYQDdBhAAaQDdBgYAmQDdBgYAuQDdBhUAyQDdBgYAiQAsAwYAiQA3
+AwYA0QAJCRsAcQDdBiEAcQDCBisAcQC5By8AeQBjAzMAcQB4BTgAcQCHBT0AcQB/BQEA2QDdBhAA
+cQDuCEMAcQA/CEMAiQDdBgYA0QD8B0cAiQDNB04AkQDdBgYA6QC0AFQA6QD8CFsAoQDdBmAAwQDd
+BgYALgALAOYALgATAO8ALgAbAA4BLgAjABcBLgArAEABLgAzAEABLgA7AEABLgBDABcBLgBLAEYB
+LgBTAEABLgBbAF0BQwBjAKcB4wBrAKcBwQF7AKcBKQVzAA4BSQVzAA4BAwABAAcAKQAIACsAAABv
+Ac8AAACCBNMAAACWA88AAACoBNMAAABTBs8AAAAZBdMAAAA+Bs8AAAD9BNMAAADlAM8AAABaBNMA
+AADCBc8AAADSBNMAAAAwCM8AAABpBdMAAADrB88AAAAwBdMAAACAAM8AAAAuBNMAAABTAM8AAAD9
+A9MAAABdAM8AAAAOBNMAAABKAM8AAADtA9MAAABnAM8AAAAfBNMAAABQBs8AAAAWBdMAAACTA88A
+AAClBNMAAABsAc8AAAB/BNMAAAC/Bc8AAADPBNMAAADiAM8AAABXBNMAAAAFAM8AAADSA9MAAAAt
+CM8AAABmBdMAAADNBtcAAAA/AdwAAABPCOEAAgAGAAMAAgAHAAUAAgAIAAcAAgAJAAkAAgAKAAsA
+AgALAA0AAgAMAA8AAgANABEAAgAOABMAAgAPABUAAgAQABcAAgARABkAAgASABsAAgATAB0AAgAU
+AB8AAgAVACEAAgAWACMAAgAXACUAAgAYACcAAgAZACkAAgAaACsAAgAbAC0AAgAcAC8AAgAdADEA
+AgAeADMAAgAfADUAAQAgADcAAQAhADkAAQAiADsAAQAjAD0AAQAkAD8AAQAlAEEAAQAmAEMAAQAn
+AEUAAQAoAEcAAQApAEkAAQAqAEsAAQArAE0AAQAsAE8AAQAtAFEAAgA3AFMAAgA4AFUAAQA5AFUA
+AgA6AFcABIAAAAEAAAAAAAAAAAAAAAAAIgAAAAQAAAAAAAAAAAAAAGcAiQAAAAAADgAAAAAAAAAA
+AAAAcACFCAAAAAAOAAAAAAAAAAAAAABwAKIIAAAAAAQAAAAAAAAAAAAAAGcAkAUAAAAAAAAAAAEA
+AAAuBwAAAAAAc2V0X091dERlc2NyaXB0aW9uMgBkZXNjcmlwdGlvbjIAU0NfYjdlNzc1MWM0NDBh
+NGVjZjlkMzY5NDZlMmIyNzM4MDMAZ2V0X0E0MTUAZ2V0X0ExNjQ5AGdldF9NMTY0OQBnZXRfQTQ5
+ADxNb2R1bGU+AElucHV0SUQAZ2V0X1BvZGdydXBhAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBS
+dW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUAZ2V0X1N0YXJ0VGlt
+ZQBzZXRfT3V0U3RhcnRUaW1lAHN0YXJ0VGltZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBl
+bGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBBcHBsaWNh
+dGlvblNldHRpbmdzQmFzZQBnZXRfRGF0ZQBzZXRfT3V0RGF0ZQBkYXRlAEVkaXRvckJyb3dzYWJs
+ZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRy
+aWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1i
+bHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdv
+cmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3Jp
+cHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVBy
+b2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBv
+bmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVD
+b21wYXRpYmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVt
+LlJ1bnRpbWUuVmVyc2lvbmluZwBHZXRTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAGdldF9D
+aGFubmVsAHNldF9PdXRDaGFubmVsAGNoYW5uZWwAU0NfYjdlNzc1MWM0NDBhNGVjZjlkMzY5NDZl
+MmIyNzM4MDMuZGxsAHNldF9PdXREZXNjcmlwdGlvbjJfSXNOdWxsAGdldF9BNDE1X0lzTnVsbABn
+ZXRfQTE2NDlfSXNOdWxsAGdldF9NMTY0OV9Jc051bGwAZ2V0X0E0OV9Jc051bGwAZ2V0X1BvZGdy
+dXBhX0lzTnVsbABnZXRfU3RhcnRUaW1lX0lzTnVsbABzZXRfT3V0U3RhcnRUaW1lX0lzTnVsbABn
+ZXRfRGF0ZV9Jc051bGwAc2V0X091dERhdGVfSXNOdWxsAGdldF9DaGFubmVsX0lzTnVsbABzZXRf
+T3V0Q2hhbm5lbF9Jc051bGwAZ2V0X0R1cmF0aW9uX0lzTnVsbABzZXRfT3V0RHVyYXRpb25fSXNO
+dWxsAGdldF9EZXNjcmlwdGlvbl9Jc051bGwAZ2V0X25kRGVzY3JpcHRpb25fSXNOdWxsAHNldF9P
+dXREZXNjcmlwdGlvbl9Jc051bGwAZ2V0X1RvdGFsSW5kaXZpZHVhbHNfSXNOdWxsAGdldF9WYXJp
+YWJsZVRhcmdldF9Jc051bGwAc2V0X091dFZhcmlhYmxlVGFyZ2V0X0lzTnVsbABTZXROdWxsAHNl
+dF9JdGVtAFN5c3RlbQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAGdldF9EdXJhdGlvbgBzZXRfT3V0
+RHVyYXRpb24AZHVyYXRpb24AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRp
+b24AU3lzdGVtLlJlZmxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBnZXRfRGVzY3Jp
+cHRpb24AZ2V0X25kRGVzY3JpcHRpb24Ac2V0X091dERlc2NyaXB0aW9uAGRlc2NyaXB0aW9uAFN0
+cmluZ0NvbXBhcmlzb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAASW5wdXQw
+QnVmZmVyAFBpcGVsaW5lQnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5j
+dG9yAC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2
+aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNDX2I3ZTc3NTFjNDQwYTRlY2Y5ZDM2OTQ2ZTJiMjczODAz
+LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ19iN2U3NzUx
+YzQ0MGE0ZWNmOWQzNjk0NmUyYjI3MzgwMy5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1
+bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0dGluZ3MAZ2V0X1RvdGFsSW5kaXZpZHVhbHMA
+RXF1YWxzAENvbm5lY3Rpb25zAE9iamVjdABnZXRfVmFyaWFibGVUYXJnZXQAc2V0X091dFZhcmlh
+YmxlVGFyZ2V0AEVuZE9mUm93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29t
+cG9uZW50AFNjcmlwdENvbXBvbmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jv
+c29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQASW5wdXQwX1By
+b2Nlc3NJbnB1dFJvdwBOZXh0Um93AGluZGV4AGdldF9Bc3NlbWJseQBvcF9FcXVhbGl0eQAAAAAA
+AQATQQBNAFIALQBwAGUAcgBjAHQAARNTAEgAUgAtAHAAZQByAGMAdAABE1IAQwBIAC0AcABlAHIA
+YwB0AAEHUgBDAEgAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8A
+dAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2
+AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAAAP
+SQBuAHAAdQB0ACAAMAAAcVMAQwBfAGIANwBlADcANwA1ADEAYwA0ADQAMABhADQAZQBjAGYAOQBk
+ADMANgA5ADQANgBlADIAYgAyADcAMwA4ADAAMwAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUA
+cwBvAHUAcgBjAGUAcwAAAAA1Mx0TlrBSSbGNKcpnA+LfAAQgAQEIAyAAAQUgAQEREQQgAQEOBSAB
+ARFZBQACAg4OCSADARI9HQgSQQMGEj0DBh0IBCABDggEIAECCAUgAgEIHAMgAAIGIAICDhFxBSAB
+HQgIBgABEnUReQQgABJ9BiACAQ4SfQi3elxWGTTgiQiJhF3NgIDMkQIGDgIGCAMGEhQDBhIYAwYS
+RQMGElEDBhJVAwYSIAUgAQESDAMgAA4EIAEBAgkgBAEIDhI9EkEFIAEBEkUEAAASUQQAABJVBQAB
+ARJVBAAAEiADAAABAygADgMoAAIECAASUQQIABJVBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBO
+b25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDX2I3ZTc3NTFjNDQwYTRlY2Y5ZDM2OTQ2
+ZTJiMjczODAzAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABouTkVURnJhbWV3b3Jr
+LFZlcnNpb249djQuNQEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41
+BAEAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1z
+Y29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49
+Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAA
+AAAAAAAAAFBBRFBBRFC0AAAA9DwAAAAAAAAAAAAADj0AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAA9AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
+EAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABY
+QAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E
+7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
+AGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAA
+AACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAAMAA0
+AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4A
+YQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBD
+AF8AYgA3AGUANwA3ADUAMQBjADQANAAwAGEANABlAGMAZgA5AGQAMwA2ADkANAA2AGUAMgBiADIA
+NwAzADgAMAAzAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAw
+AAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBiADcAZQA3ADcANQAxAGMA
+NAA0ADAAYQA0AGUAYwBmADkAZAAzADYAOQA0ADYAZQAyAGIAMgA3ADMAOAAwADMALgBkAGwAbAAA
+AEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAA
+QAAgACAAMgAwADEAOAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAA
+AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfAGIANwBlADcA
+NwA1ADEAYwA0ADQAMABhADQAZQBjAGYAOQBkADMANgA5ADQANgBlADIAYgAyADcAMwA4ADAAMwAu
+AGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBiADcAZQA3ADcA
+NQAxAGMANAA0ADAAYQA0AGUAYwBmADkAZAAzADYAOQA0ADYAZQAyAGIAMgA3ADMAOAAwADMAAAA0
+AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEA
+QQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2438,7 +2230,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAADQOwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAACA9AAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2447,7 +2239,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   </arrayElements>
                 </property>
                 <property
@@ -2483,7 +2275,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
                   name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE">76</property>
+                  typeConverter="NOTBROWSABLE">03</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
@@ -2496,95 +2288,95 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Date&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;Date&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Date&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Date&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Channel&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;Channel&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Channel&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Channel&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Description&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;Description&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Description&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Description&quot;]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;2nd Description&quot;]"
-                      cachedCodepage="1250"
+                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;ndDescription&quot;]"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
-                      cachedName="&quot;2nd Description&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;2nd Description&quot;]" />
+                      cachedName="&quot;ndDescription&quot;"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;ndDescription&quot;]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Start time&quot;]"
-                      cachedCodepage="1250"
+                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;StartTime&quot;]"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
-                      cachedName="&quot;Start time&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Start time&quot;]" />
+                      cachedName="&quot;StartTime&quot;"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;StartTime&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Duration&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;Duration&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Duration&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Duration&quot;]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Variable Target&quot;]"
-                      cachedCodepage="1250"
+                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;VariableTarget&quot;]"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
-                      cachedName="&quot;Variable Target&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]" />
+                      cachedName="&quot;VariableTarget&quot;"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;VariableTarget&quot;]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Total Individuals&quot;]"
-                      cachedCodepage="1250"
+                      refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;TotalIndividuals&quot;]"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
-                      cachedName="&quot;Total Individuals&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]" />
+                      cachedName="&quot;TotalIndividuals&quot;"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;TotalIndividuals&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;Podgrupa&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;Podgrupa&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;Podgrupa&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;A16-49&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;A16-49&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A16-49&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;M16-49&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;M16-49&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;M16-49&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;A4-15&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;A4-15&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-15&quot;]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\Script Component.Inputs[Input 0].Columns[&quot;A4-9&quot;]"
-                      cachedCodepage="1250"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="&quot;A4-9&quot;"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]" />
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[&quot;A4-9&quot;]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2597,475 +2389,53 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Description]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Description]"
                       name="Out_Description" />
                     <outputColumn
                       refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Channel]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Channel]"
                       name="Out_Channel" />
                     <outputColumn
                       refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Date]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Date]"
                       name="Out_Date" />
                     <outputColumn
                       refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Duration]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Duration]"
                       name="Out_Duration" />
                     <outputColumn
                       refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Start_Time]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Start_Time]"
                       name="Out_Start_Time" />
                     <outputColumn
                       refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Description_2]"
-                      codePage="1250"
+                      codePage="1252"
                       dataType="str"
                       length="100"
                       lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_Description_2]"
                       name="Out_Description_2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task 1\Source - stage_txt"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="1045"
-              name="Source - stage_txt"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task 1\Source - stage_txt.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 5]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 5]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Date&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Date&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Date&quot;]"
-                      name="&quot;Date&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Channel&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Channel&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Channel&quot;]"
-                      name="&quot;Channel&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Description&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Description&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Description&quot;]"
-                      name="&quot;Description&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;2nd Description&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;2nd Description&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;2nd Description&quot;]"
-                      name="&quot;2nd Description&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Start time&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Start time&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Start time&quot;]"
-                      name="&quot;Start time&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Duration&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Duration&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Duration&quot;]"
-                      name="&quot;Duration&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Variable Target&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]"
-                      name="&quot;Variable Target&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Total Individuals&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]"
-                      name="&quot;Total Individuals&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Podgrupa&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]"
-                      name="&quot;Podgrupa&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A16-49&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]"
-                      name="&quot;A16-49&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;M16-49&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]"
-                      name="&quot;M16-49&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-15&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]"
-                      name="&quot;A4-15&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-9&quot;]"
-                      length="100"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]"
-                      name="&quot;A4-9&quot;"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Date&quot;]"
-                      codePage="1250"
+                      refId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_VariableTarget]"
+                      codePage="1252"
                       dataType="str"
                       length="100"
-                      name="&quot;Date&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Channel&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Channel&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Description&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Description&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;2nd Description&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;2nd Description&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Start time&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Start time&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Duration&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Duration&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Variable Target&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Variable Target&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Total Individuals&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Total Individuals&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Podgrupa&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;Podgrupa&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A16-49&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;A16-49&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;M16-49&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;M16-49&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-15&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;A4-15&quot;" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-9&quot;]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="&quot;A4-9&quot;" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1250"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
+                      lineageId="Package\Data Flow Task 1\Script Component.Outputs[Output 0].Columns[Out_VariableTarget]"
+                      name="Out_VariableTarget" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -3074,15 +2444,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task 1.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task 1\Script Component.Inputs[Input 0]"
-              name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\Source - stage_txt.Outputs[Flat File Source Output]" />
-            <path
               refId="Package\Data Flow Task 1.Paths[Multicast Output 1]"
               endId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
               name="Multicast Output 1"
               startId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task 1\Script Component.Inputs[Input 0]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Output 0]"
               endId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]"
@@ -3118,39 +2488,53 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="163,42"
-          Id="Package\Data Flow Task 1\Script Component"
-          TopLeft="351,198" />
-        <NodeLayout
           Size="120,42"
           Id="Package\Data Flow Task 1\Multicast"
-          TopLeft="389,270" />
+          TopLeft="411,176" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task 1\Script Component"
+          TopLeft="390,100" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task 1\OLE DB Source"
+          TopLeft="401,19" />
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Output 0]"
-          TopLeft="432.5,240">
+          TopLeft="471.25,142">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="16.5,30"
+              EndConnector="0,34"
               Start="0,0"
-              End="16.5,22.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11"
-                    Point2="0,15"
-                    Point3="4,15" />
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
+          TopLeft="473.75,61">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="12.5,15" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.5,15"
-                    Point2="16.5,15"
-                    Point3="16.5,19" />
-                  <mssgle:LineSegment
-                    End="16.5,22.5" />
+                    End="0,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3162,71 +2546,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         <NodeLayout
           Size="172,42"
           Id="Package\Data Flow Task 1\Flat File Destination"
-          TopLeft="562,395" />
+          TopLeft="390,273" />
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Multicast Output 1]"
-          TopLeft="449,312">
+          TopLeft="473.5,218">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="199,83"
+              EndConnector="0,55"
               Start="0,0"
-              End="199,75.5">
+              End="0,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.5"
-                    Point2="0,41.5"
-                    Point3="4,41.5" />
-                  <mssgle:LineSegment
-                    End="195,41.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="195,41.5"
-                    Point2="199,41.5"
-                    Point3="199,45.5" />
-                  <mssgle:LineSegment
-                    End="199,75.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Data Flow Task 1\Source - stage_txt"
-          TopLeft="335.5,16.5" />
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
-          TopLeft="418,58.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="14.5,139.5"
-              Start="0,0"
-              End="14.5,132">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,65.75"
-                    Point2="0,69.75"
-                    Point3="4,69.75" />
-                  <mssgle:LineSegment
-                    End="10.5,69.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.5,69.75"
-                    Point2="14.5,69.75"
-                    Point3="14.5,73.75" />
-                  <mssgle:LineSegment
-                    End="14.5,132" />
+                    End="0,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3238,5 +2572,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
