@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="split-data"
   DTS:PackageType="5"
-  DTS:VersionBuild="71"
-  DTS:VersionGUID="{376B3C0F-78E4-4081-9F63-662C9BDB08B8}">
+  DTS:VersionBuild="72"
+  DTS:VersionGUID="{E7F622BA-C141-448E-9AEF-CDC93133372A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -193,17 +193,17 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zelun]"
+      DTS:refId="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zzelun]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{E1B5FAC7-2A40-4C2E-8835-E2447C4FCD0C}"
-      DTS:ObjectName="hd-wat.database.windows.net.Hurtownie danych.zelun">
+      DTS:ObjectName="hd-wat.database.windows.net.Hurtownie danych.zzelun">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=wat-hd.database.windows.net;User ID=zzelun;Initial Catalog=wat-hd;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzs+lZ2PYgEGtYI50x90ACAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABGq3GEmSnmaJ4lfEBNTSJ0ietlOReaczDm36tYrC5OqwAAAAAOgAAAAAIAACAAAADhmF8lXrBdDwdI0FhvrsdkkhkoU4YSc3LD9NAXJxVELSAAAAAfh5X7KWn5gIf3aCXqGClbU6i+iNVVbmtW9vIWmVEfm0AAAADd1oiJAufiBYzBbFBSsfz7xFY7wxT7C0Ot9OsUaF2AYJCPb07lXqHQcQldfHtcbaCktsErlcnB8MDIn/faHETA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzs+lZ2PYgEGtYI50x90ACAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC+RICTZUsDwXHVBTKqHD3KMw32PIt+iarnT3ekvOCoNwAAAAAOgAAAAAIAACAAAACcJX7j40M+ZkNwhZGbikQoDAzwlt4WrN69SKczTiTBzyAAAAByd83L2HnhInDD3o2F/MwPdx79sit5rc2u9IMzAK8SD0AAAACvcK2qemiCNUQdG3azqEigvkb/zCzTVdORfx7+l76Krv4CBAw48eoSCh9S3BpcTPLG3Lt9cYjEw8eKP2+c4SKu</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -786,8 +786,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zelun]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zelun]"
+                  connectionManagerID="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zzelun]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd-wat.database.windows.net.Hurtownie danych.zzelun]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1107,13 +1107,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="134,42"
+          Id="Package\Clean stage"
+          TopLeft="63,366" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Create tables"
+          TopLeft="44,189" />
+        <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
           TopLeft="51.5,93.5" />
         <NodeLayout
           Size="163,42"
-          Id="Package\Create tables"
-          TopLeft="44,189" />
+          Id="Package\Fill tables"
+          TopLeft="47,279" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Pivot stage"
+          TopLeft="63,464" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="126.25,135.5">
@@ -1136,10 +1148,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Fill tables"
-          TopLeft="47,279" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="127,231">
@@ -1162,10 +1170,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="134,42"
-          Id="Package\Clean stage"
-          TopLeft="63,366" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="129.25,321">
@@ -1188,10 +1192,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="131,42"
-          Id="Package\Pivot stage"
-          TopLeft="63,464" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="129.25,408">
