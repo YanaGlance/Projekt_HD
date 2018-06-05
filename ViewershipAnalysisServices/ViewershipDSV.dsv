@@ -1,0 +1,167 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="42383620-3ba0-44f7-b1d7-b89f37a5c4bd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ViewershipDSV</ID>
+  <Name>ViewershipDSV</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>wat-hd</DataSourceID>
+  <Schema>
+    <xs:schema id="ViewershipDSV" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ViewershipDSV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="a7f9f06b-e291-49e0-83e3-3f7edeaf3357">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Viewership" msprop:design-time-name="fb8b925f-af5e-439d-a981-7e65330df198" msprop:DbTableName="Viewership" msprop:FriendlyName="Viewership" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GroupId" msprop:design-time-name="bf699568-08a5-4cfd-ac6c-2295f5d314d9" msprop:DbColumnName="GroupId" msprop:FriendlyName="GroupId" type="xs:int" />
+                  <xs:element name="ProgrammeId" msprop:design-time-name="9c8b8ce6-25e9-410e-8015-2fc5cf3e8cc6" msprop:DbColumnName="ProgrammeId" msprop:FriendlyName="ProgrammeId" type="xs:int" />
+                  <xs:element name="MediaCalendarId" msprop:design-time-name="a818b221-c652-4d94-9227-32ec7e63f160" msprop:DbColumnName="MediaCalendarId" msprop:FriendlyName="MediaCalendarId" type="xs:int" />
+                  <xs:element name="MediaTimeId" msprop:design-time-name="90cda651-f4a4-45b2-8f3b-3222b0fab9e7" msprop:DbColumnName="MediaTimeId" msprop:FriendlyName="MediaTimeId" type="xs:int" />
+                  <xs:element name="AMR" msprop:design-time-name="959fec52-2b2f-457e-ba69-fec1ecf730b5" msprop:DbColumnName="AMR" msprop:FriendlyName="AMR" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="AMR-perct" msprop:design-time-name="8e00800b-dbed-4edc-a61a-cb4cb98d18eb" msprop:DbColumnName="AMR-perct" msprop:FriendlyName="AMR-perct" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SHR-perct" msprop:design-time-name="44620f13-6242-4ece-a95d-ad4efcc2d4f6" msprop:DbColumnName="SHR-perct" msprop:FriendlyName="SHR-perct" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RCH-perct" msprop:design-time-name="c5c52d8f-89ff-4bbb-b674-751dd18b298a" msprop:DbColumnName="RCH-perct" msprop:FriendlyName="RCH-perct" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RCH" msprop:design-time-name="e875d64a-51f5-4655-ab68-db6c619f7b81" msprop:DbColumnName="RCH" msprop:FriendlyName="RCH" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ViewershipId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4ee44837-ffa6-4abb-b14c-3f94357832af" msprop:DbColumnName="ViewershipId" msprop:FriendlyName="ViewershipId" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Group" msprop:design-time-name="a5a06551-4aab-4954-b13b-e82601dcac1a" msprop:DbTableName="Group" msprop:FriendlyName="Group" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GroupId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c909eb79-f8b0-4b35-81e1-07659caf9927" msprop:DbColumnName="GroupId" msprop:FriendlyName="GroupId" type="xs:int" />
+                  <xs:element name="GroupName" msprop:design-time-name="f8ec4693-4b4e-4460-a763-a5ee4b2563c8" msprop:DbColumnName="GroupName" msprop:FriendlyName="GroupName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Programme" msprop:design-time-name="abab13e1-8439-4323-a269-12dc2d85cb61" msprop:DbTableName="Programme" msprop:FriendlyName="Programme" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ProgrammeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="dd4323db-c540-452e-b2c1-04eefe1d9bbb" msprop:DbColumnName="ProgrammeId" msprop:FriendlyName="ProgrammeId" type="xs:int" />
+                  <xs:element name="Channel" msprop:design-time-name="e2031a50-83c0-413a-93ed-7c31cf3e7f5d" msprop:DbColumnName="Channel" msprop:FriendlyName="Channel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Description" msprop:design-time-name="7790476f-18fd-48f5-8414-a8ea3a333bef" msprop:DbColumnName="Description" msprop:FriendlyName="Description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ndDescription" msprop:design-time-name="7e2dd7e6-7341-44eb-a3df-6e72fb44f78b" msprop:DbColumnName="ndDescription" msprop:FriendlyName="ndDescription" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Duration" msprop:design-time-name="324ab806-9ef4-4ef2-a910-dc6cd9c4590e" msprop:DbColumnName="Duration" msprop:FriendlyName="Duration" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MediaTime" msprop:design-time-name="f0a21765-5e59-45cf-8051-e9ef2cf01013" msprop:DbTableName="MediaTime" msprop:FriendlyName="MediaTime" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MediaTimeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="bee88cb3-0726-4ead-ad99-dcaf4d337c10" msprop:DbColumnName="MediaTimeId" msprop:FriendlyName="MediaTimeId" type="xs:int" />
+                  <xs:element name="Hour" msprop:design-time-name="b3c19c4b-4353-4cbc-833a-18424e1e08d8" msprop:DbColumnName="Hour" msprop:FriendlyName="Hour" type="xs:int" minOccurs="0" />
+                  <xs:element name="Minute" msprop:design-time-name="ee2f7b48-756f-4ba5-bf1c-0a6d105165bf" msprop:DbColumnName="Minute" msprop:FriendlyName="Minute" type="xs:int" minOccurs="0" />
+                  <xs:element name="Second" msprop:design-time-name="188b6bd7-fd2a-4a10-8132-31b1d91f7173" msprop:DbColumnName="Second" msprop:FriendlyName="Second" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MediaCalendar" msprop:design-time-name="fe2e4dd7-f124-4bf1-aa69-235efa5493c6" msprop:DbTableName="MediaCalendar" msprop:FriendlyName="MediaCalendar" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MediaCalendarId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f938d0f0-995e-4327-9449-4f5f40a313dd" msprop:DbColumnName="MediaCalendarId" msprop:FriendlyName="MediaCalendarId" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="11a9bdd3-7487-4ff3-accc-787dea487166" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Viewership" />
+          <xs:field xpath="ViewershipId" />
+        </xs:unique>
+        <xs:unique name="dbo_Group_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Group" />
+          <xs:field xpath="GroupId" />
+        </xs:unique>
+        <xs:unique name="dbo_Programme_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Programme" />
+          <xs:field xpath="ProgrammeId" />
+        </xs:unique>
+        <xs:unique name="dbo_MediaTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MediaTime" />
+          <xs:field xpath="MediaTimeId" />
+        </xs:unique>
+        <xs:unique name="dbo_MediaCalendar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MediaCalendar" />
+          <xs:field xpath="MediaCalendarId" />
+        </xs:unique>
+        <xs:keyref name="FK__Viewershi__Media__693CA210" refer="dbo_MediaCalendar_Constraint1">
+          <xs:selector xpath=".//dbo_Viewership" />
+          <xs:field xpath="MediaCalendarId" />
+        </xs:keyref>
+        <xs:keyref name="FK__Viewershi__Media__6A30C649" refer="dbo_MediaTime_Constraint1">
+          <xs:selector xpath=".//dbo_Viewership" />
+          <xs:field xpath="MediaTimeId" />
+        </xs:keyref>
+        <xs:keyref name="FK__Viewershi__Progr__68487DD7" refer="dbo_Programme_Constraint1">
+          <xs:selector xpath=".//dbo_Viewership" />
+          <xs:field xpath="ProgrammeId" />
+        </xs:keyref>
+        <xs:keyref name="FK__Viewershi__Group__6754599E" refer="dbo_Group_Constraint1">
+          <xs:selector xpath=".//dbo_Viewership" />
+          <xs:field xpath="GroupId" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <ViewershipDSV xmlns="" />
+  </Schema>
+</DataSourceView>

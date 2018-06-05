@@ -6,8 +6,7 @@
   <ConnectionString>Provider=SQLNCLI11.1;Data Source=wat-hd.database.windows.net;Password=;User ID=;Initial Catalog=wat-hd</ConnectionString>
   <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
   <ImpersonationInfo>
-    <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
-    <Account></Account>
+    <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
     <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
   </ImpersonationInfo>
   <Timeout>PT0S</Timeout>
