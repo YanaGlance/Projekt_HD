@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c7c77ae5-aa4d-41f1-82f4-1ec783a9f877" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5ed6feb7-f9f1-4950-bba6-11098275be8c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Programme</ID>
   <Name>Programme</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-6654" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="16457" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-5609" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="14367" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-6654</Value>
+      <Value>-5609</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,43 +68,45 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b4b49719-4e15-4c0f-b1fb-e2e420c23954">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d332b865-a863-4f1e-86bc-495dceafcf08">
     <DataSourceViewID>ViewershipDSV</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="79c5cb0c-3df1-4ea7-afe0-9eb6593bb838">
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="03e688ee-3b8f-4087-bd2d-62cc5326b618">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="06250d76-c9aa-4387-b6d4-43bfb5f8a574">
+    <Attribute dwd:design-time-name="cc2484b0-48f5-43c8-a6a5-6dd3236d9d2d">
       <ID>Programme Id</ID>
       <Name>Programme Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4a3288f2-2eb1-4890-91e2-f04a3abf01ca">
+        <KeyColumn dwd:design-time-name="4a0e8427-77dd-418f-9d97-9954d743963e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c6de34c-ff85-497c-9cf9-36e3163e328a">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6cdd668-48c7-4f98-8274-a9c133f4fa9d">
             <TableID>dbo_Programme</TableID>
             <ColumnID>ProgrammeId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="520bbb83-59ac-4a24-9d98-955d0add493c">
+        <AttributeRelationship dwd:design-time-name="95d827b1-6397-4ff6-bc6e-2383ff4cd754">
           <AttributeID>Channel</AttributeID>
           <Name>Channel</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6bdf5fa7-e28e-41b1-b93e-4ca038b6b1fe">
+        <AttributeRelationship dwd:design-time-name="4efd831d-152a-4ddd-8e72-4e327c27b06c">
           <AttributeID>Description</AttributeID>
           <Name>Description</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d9ff2591-a550-4e4e-9514-59b9b8e72579">
+        <AttributeRelationship dwd:design-time-name="bf275661-19f5-457b-87f9-03103e8d4cc4">
           <AttributeID>Nd Description</AttributeID>
           <Name>Nd Description</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="edef0ae6-8f0e-41b4-b646-0c2224e60070">
+        <AttributeRelationship dwd:design-time-name="e2b69266-8ed0-4a83-b7a7-5e21ef699d01">
           <AttributeID>Duration</AttributeID>
           <Name>Duration</Name>
         </AttributeRelationship>
@@ -113,14 +115,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="54900610-1e83-4245-96fe-54b7e4dc34df">
+    <Attribute dwd:design-time-name="71ef1850-fba1-4e70-a76e-83cce6ee293d">
       <ID>Channel</ID>
       <Name>Channel</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fe46b5a8-0ebf-4b46-aba9-dd7abf2171bc">
+        <KeyColumn dwd:design-time-name="9ca1b9b7-b098-4285-832c-945d367c75f3">
           <DataType>WChar</DataType>
-          <DataSize>70</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="342c98b2-0a41-44cd-b730-1033caabad9f">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b57d7b0b-903a-4545-b315-22f7dd772fcb">
             <TableID>dbo_Programme</TableID>
             <ColumnID>Channel</ColumnID>
           </Source>
@@ -129,14 +131,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="af2969fd-3f18-416a-8f24-139c0be2cb01">
+    <Attribute dwd:design-time-name="38b66854-8f65-4a5a-93c5-d27d48b7c576">
       <ID>Description</ID>
       <Name>Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="afeab315-2781-4cbc-b8ea-381daba2da08">
+        <KeyColumn dwd:design-time-name="1fb02158-c866-456d-b61b-6d2d599ab854">
           <DataType>WChar</DataType>
-          <DataSize>70</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="854c4165-e787-4346-8521-5eaad050ec9f">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a6fa7a9-55dd-4469-afe1-dc8507102c4f">
             <TableID>dbo_Programme</TableID>
             <ColumnID>Description</ColumnID>
           </Source>
@@ -145,14 +147,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0cba4496-c7be-47b7-a421-0d145979a9b7">
+    <Attribute dwd:design-time-name="937a3946-e70b-4a82-bb58-c802a0e4fe1f">
       <ID>Nd Description</ID>
       <Name>Nd Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="48b239aa-fd4d-4607-b869-da0a0ac30c37">
+        <KeyColumn dwd:design-time-name="e1df5228-739b-4a3a-a642-043f77ecbdfc">
           <DataType>WChar</DataType>
-          <DataSize>70</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c25eb44-386a-4899-8ab4-e6feb62f1802">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a23a82bb-f5cc-416e-836a-be150cef9bbf">
             <TableID>dbo_Programme</TableID>
             <ColumnID>ndDescription</ColumnID>
           </Source>
@@ -161,13 +163,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a582e262-7fea-4e47-b385-780e7a500bff">
+    <Attribute dwd:design-time-name="9b296d7e-dba1-4829-a575-9a42f09bfb1d">
       <ID>Duration</ID>
       <Name>Duration</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6049ca69-36ac-4d30-919f-daac8aa3153f">
+        <KeyColumn dwd:design-time-name="67bc27e5-03bd-4b43-9d5b-eac307c0260a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f71d63f1-5e8f-41d5-a88b-629409224d80">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f0e74cd-0360-48b5-b205-5debcfaf7fd1">
             <TableID>dbo_Programme</TableID>
             <ColumnID>Duration</ColumnID>
           </Source>
@@ -178,21 +180,21 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="548e862c-5d93-420b-abce-55c46fcf18eb">
+    <Hierarchy dwd:design-time-name="749bb0ad-b946-493e-ad1d-36032cd593ed">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="850d02d6-120d-4770-a341-259389008da2">
+        <Level dwd:design-time-name="9d105bab-3a5b-42af-917d-00ec3aaaefdb">
           <ID>Channel</ID>
           <Name>Channel</Name>
           <SourceAttributeID>Channel</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="3c34a33e-fee9-449c-9327-07dcb626c13b">
+        <Level dwd:design-time-name="ef4bbdda-f7a3-4ff4-9c36-df60e43993be">
           <ID>Description</ID>
           <Name>Description</Name>
           <SourceAttributeID>Description</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="8ddb5b6d-8499-4ffc-9688-4ccae5003031">
+        <Level dwd:design-time-name="94c3b5c8-522f-466f-a656-f94d0211eb0e">
           <ID>Nd Description</ID>
           <Name>Nd Description</Name>
           <SourceAttributeID>Nd Description</SourceAttributeID>
