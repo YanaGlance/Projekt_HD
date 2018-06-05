@@ -1,3 +1,4 @@
+INSERT INTO Viewership(GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 SELECT '1' AS GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH]
 FROM
 (SELECT ProgrammeId, MediaCalendarId, MediaTimeId, VariableTarget, TotalIndividuals
@@ -7,7 +8,8 @@ PIVOT
 SUM(TotalIndividuals)
 FOR VariableTarget IN ([AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 ) AS PivotTable
-UNION
+
+INSERT INTO Viewership(GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 SELECT '2' AS GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH]
 FROM
 (SELECT ProgrammeId, MediaCalendarId, MediaTimeId, VariableTarget, [Podgrupa]
@@ -17,7 +19,8 @@ PIVOT
 SUM([Podgrupa])
 FOR VariableTarget IN ([AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 ) AS PivotTable
-UNION
+
+INSERT INTO Viewership(GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 SELECT '3' AS GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH]
 FROM
 (SELECT ProgrammeId, MediaCalendarId, MediaTimeId, VariableTarget, [A16-49]
@@ -27,7 +30,8 @@ PIVOT
 SUM([A16-49])
 FOR VariableTarget IN ([AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 ) AS PivotTable
-UNION
+
+INSERT INTO Viewership(GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 SELECT '4' AS GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH]
 FROM
 (SELECT ProgrammeId, MediaCalendarId, MediaTimeId, VariableTarget, [M16-49]
@@ -37,7 +41,8 @@ PIVOT
 SUM([M16-49])
 FOR VariableTarget IN ([AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 ) AS PivotTable
-UNION
+
+INSERT INTO Viewership(GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 SELECT '5' AS GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH]
 FROM
 (SELECT ProgrammeId, MediaCalendarId, MediaTimeId, VariableTarget, [A4-15]
@@ -47,7 +52,8 @@ PIVOT
 SUM([A4-15])
 FOR VariableTarget IN ([AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 ) AS PivotTable
-UNION
+
+INSERT INTO Viewership(GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH])
 SELECT '6' AS GroupId, ProgrammeId, MediaCalendarId, MediaTimeId, [AMR], [AMR-perct], [SHR-perct], [RCH-perct], [RCH]
 FROM
 (SELECT ProgrammeId, MediaCalendarId, MediaTimeId, VariableTarget, [A4-9]
