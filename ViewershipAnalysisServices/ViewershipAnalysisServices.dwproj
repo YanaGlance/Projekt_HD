@@ -20,20 +20,20 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Group.dim</Name>
-      <FullPath>Group.dim</FullPath>
+      <Name>Media Calendar.dim</Name>
+      <FullPath>Media Calendar.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Programme.dim</Name>
-      <FullPath>Programme.dim</FullPath>
+      <Name>Group.dim</Name>
+      <FullPath>Group.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Media Time.dim</Name>
       <FullPath>Media Time.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Media Calendar.dim</Name>
-      <FullPath>Media Calendar.dim</FullPath>
+      <Name>Programme.dim</Name>
+      <FullPath>Programme.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
