@@ -16,10 +16,10 @@ GO
 
 
 MERGE MediaCalendar AS mc 
-USING ( select distinct Date from Stage ) as st
-ON mc.Date = st.Date
+USING ( select distinct YEAR(Date) as Year, MONTH(Date) as Month, DAY(Date) as Day from Stage ) as st
+ON mc.Year = st.Year AND mc.Month = st.Month AND mc.Day = st.Day
 WHEN NOT MATCHED THEN
-INSERT(Date)
-VALUES(st.Date);
+INSERT(Year, Month, Day)
+VALUES(st.Year, st.Day, st.Month);
 GO
 

@@ -54,9 +54,11 @@ IF NOT EXISTS (SELECT [name] FROM sys.tables WHERE [name] = 'Group')
 GO
 
 IF NOT EXISTS (SELECT [name] FROM sys.tables WHERE [name] = 'MediaCalendar') 
-  CREATE TABLE dbo.[Group](
+  CREATE TABLE dbo.MediaCalendar(
     MediaCalendarId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    Date date
+    Year int,
+    Month int,
+    Day int
   )
 GO
 
