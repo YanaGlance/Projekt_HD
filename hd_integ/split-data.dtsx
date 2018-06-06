@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-LJKDFEA\pchmi"
   DTS:DTSID="{143EFBC4-9F0B-4943-84B8-9FBECD90C031}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.101"
+  DTS:LastModifiedProductVersion="14.0.3002.106"
   DTS:LocaleID="1045"
   DTS:ObjectName="split-data"
   DTS:PackageType="5"
-  DTS:VersionBuild="96"
-  DTS:VersionGUID="{BEA160ED-CA05-4383-80FE-9E4B30FD2E25}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{ED27E334-BFDF-451C-AC04-82BFF2B2DA79}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -200,12 +200,7 @@
       DTS:ObjectName="hd-wat.database.windows.net.Hurtownie danych.zzelun">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=wat-hd.database.windows.net;User ID=zzelun;Initial Catalog=wat-hd;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzs+lZ2PYgEGtYI50x90ACAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAngsGurh+AD4jnPifVQQUD+p8T0tRij+zGzV8SBOv0RAAAAAAOgAAAAAIAACAAAAB+XXqLLO48twEoAP1dMkfOMFycY/KWVGQA1rSdYvzJbSAAAAAUZtqOjHb9S/yOmlm2+CwZTr9el7IFS2+Pr1ACmmckVkAAAAANwdKFwLs7UiPTGfTTApAYqcDmQYD2WH/DbcQc0ljT4LaXS+Eim1gQq4smezvl/XF2NH4IkRqYSoRFM254G45x</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=wat-hd.database.windows.net;User ID=zzelun;Initial Catalog=wat-hd;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1105,7 +1100,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Pivot2"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1123,7 +1118,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Pivot3"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1141,7 +1136,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Pivot4"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1159,7 +1154,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Pivot5"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1177,7 +1172,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Pivot6"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
