@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Programme" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Programme" left="-1991" top="-1032" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00004d0c0000" />
             </control>
@@ -55,11 +55,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>-1991</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-1032</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -70,30 +70,16 @@
       <Value>
         <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
           <Shapes NodeWidth="137">
-            <Shape Id="Programme Id" Expanded="false">
+            <Shape Id="Programme Id" Expanded="true">
               <Attributes>
                 <Attribute Id="Programme Id" />
+                <Attribute Id="Channel" />
+                <Attribute Id="Description" />
                 <Attribute Id="Duration" />
-              </Attributes>
-              <Position x="20" y="20" />
-            </Shape>
-            <Shape Id="Nd Description" Expanded="false">
-              <Attributes>
+                <Attribute Id="Media Group" />
                 <Attribute Id="Nd Description" />
               </Attributes>
-              <Position x="196" y="20" />
-            </Shape>
-            <Shape Id="Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Description" />
-              </Attributes>
-              <Position x="372" y="20" />
-            </Shape>
-            <Shape Id="Channel" Expanded="false">
-              <Attributes>
-                <Attribute Id="Channel" />
-              </Attributes>
-              <Position x="548" y="20" />
+              <Position x="20" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -128,32 +114,28 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="bf275661-19f5-457b-87f9-03103e8d4cc4">
-          <AttributeID>Nd Description</AttributeID>
-          <Name>Nd Description</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e2b69266-8ed0-4a83-b7a7-5e21ef699d01">
+        <AttributeRelationship dwd:design-time-name="9c54d0ec-a6b5-47f2-889b-a8de12b43c66">
           <AttributeID>Duration</AttributeID>
           <Name>Duration</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e93fd8d9-62fa-4a80-9b74-7077d9ec5646">
+          <AttributeID>Description</AttributeID>
+          <Name>Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="941eaf67-e992-4dd1-93cb-d41840ee6c39">
+          <AttributeID>Nd Description</AttributeID>
+          <Name>Nd Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b21d830d-b50c-4934-ad4f-2f5c67b8708b">
+          <AttributeID>Channel</AttributeID>
+          <Name>Channel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="01c6bcc3-1d58-42a8-99da-a3d622f73bfa">
+          <AttributeID>Media Group</AttributeID>
+          <Name>Media Group</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="71ef1850-fba1-4e70-a76e-83cce6ee293d">
-      <ID>Channel</ID>
-      <Name>Channel</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="9ca1b9b7-b098-4285-832c-945d367c75f3">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b57d7b0b-903a-4545-b315-22f7dd772fcb">
-            <TableID>dbo_Programme</TableID>
-            <ColumnID>Channel</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -161,20 +143,12 @@
       <ID>Description</ID>
       <Name>Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="82b84749-a64e-4340-8cea-3c2021dbf18b">
+        <KeyColumn dwd:design-time-name="c93859b0-7a77-489b-9d49-0c89531ba749">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fa6830b-df47-4b25-9f46-7111d5d77684">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0f839ad-e3a2-4f32-a65d-de627f8eadb3">
             <TableID>dbo_Programme</TableID>
             <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ee4f3ccb-b178-4d1b-9254-29c4f3ab5f5d">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a66003bb-8716-4895-b0d8-11cea84c4d8c">
-            <TableID>dbo_Programme</TableID>
-            <ColumnID>Channel</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -186,12 +160,6 @@
           <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="643715eb-8f84-4a15-830b-760ca7006e6e">
-          <AttributeID>Channel</AttributeID>
-          <Name>Channel</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -199,28 +167,12 @@
       <ID>Nd Description</ID>
       <Name>Nd Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3a4d3359-ab67-4d99-9770-6c9efd3f61f0">
+        <KeyColumn dwd:design-time-name="816d7d2e-93b2-4085-a8c5-1e109373f1a1">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d26e5251-f174-4195-93c1-58d4a77529bd">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fea083c7-02c9-42e0-917f-e3cb3cac038b">
             <TableID>dbo_Programme</TableID>
             <ColumnID>ndDescription</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="dfa849d5-4094-4f1a-a261-aa04ed12fe00">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab20aed0-73c8-47ff-80e9-a5a3532e7d9c">
-            <TableID>dbo_Programme</TableID>
-            <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ce13a0da-ef50-43a7-aa85-a8f1c9f794ef">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b922359-cd15-4ba3-8422-93487c00d0c2">
-            <TableID>dbo_Programme</TableID>
-            <ColumnID>Channel</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -232,12 +184,6 @@
           <ColumnID>ndDescription</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a870781b-6b11-43c4-baa2-84469edb3e60">
-          <AttributeID>Description</AttributeID>
-          <Name>Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -256,29 +202,38 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="30c4b86f-f239-4722-9734-c6a1cbb67e26">
+      <ID>Channel</ID>
+      <Name>Channel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c8c6142-ef91-4653-8cd4-abfaae7f1311">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a88b9f1f-fefa-4ad9-8185-b3bff611db38">
+            <TableID>dbo_Programme</TableID>
+            <ColumnID>Channel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dc7e4f9b-3de1-4763-9a4e-62565a59b5ee">
+      <ID>Media Group</ID>
+      <Name>Media Group</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fce359df-91a6-46b8-a895-e51796b3999f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbb87232-ddca-4ee7-9814-bfdb5447c833">
+            <TableID>dbo_Programme</TableID>
+            <ColumnID>MediaGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
-  <Hierarchies>
-    <Hierarchy dwd:design-time-name="749bb0ad-b946-493e-ad1d-36032cd593ed">
-      <ID>Hierarchy</ID>
-      <Name>Hierarchy</Name>
-      <Levels>
-        <Level dwd:design-time-name="9d105bab-3a5b-42af-917d-00ec3aaaefdb">
-          <ID>Channel</ID>
-          <Name>Channel</Name>
-          <SourceAttributeID>Channel</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="ef4bbdda-f7a3-4ff4-9c36-df60e43993be">
-          <ID>Description</ID>
-          <Name>Description</Name>
-          <SourceAttributeID>Description</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="94c3b5c8-522f-466f-a656-f94d0211eb0e">
-          <ID>Nd Description</ID>
-          <Name>Nd Description</Name>
-          <SourceAttributeID>Nd Description</SourceAttributeID>
-        </Level>
-      </Levels>
-    </Hierarchy>
-  </Hierarchies>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
