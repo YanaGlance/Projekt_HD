@@ -150,6 +150,7 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -186,6 +187,8 @@
           <Name>Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <OrderByAttributeID>Year</OrderByAttributeID>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -229,6 +232,8 @@
           <Name>Month</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <OrderByAttributeID>Month</OrderByAttributeID>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
