@@ -1,5 +1,3 @@
-truncate CleanStage;
-
 INSERT INTO CleanStage(MediaCalendarId, MediaTimeId, ProgrammeId, VariableTarget, Podgrupa, [A16-49], [M16-49], [A4-15], [A4-9], [TotalIndividuals])
 (SELECT 
 	  MediaCalendarId

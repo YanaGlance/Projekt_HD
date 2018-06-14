@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Wat-hd</Id>
+            <Name>Wat-hd</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAluSKJXRONEKn8M+LpZyedAAAAAAOAAAAVwBhAHQALQBoAGQAAAAQZgAAAAEAACAAAABf+9HAoVi0tgBFdz1PCxDY2zaYoWAXTqu4ToYQE6NiVgAAAAAOgAAAAAIAACAAAAAoD/pO/LpPxa/IS8DC/xvpTTikcW38DPziQ/MAqBgk0RAAAAD0eX41NsZ50gyfY9zzC3NRQAAAAKA/14cKdUX/yo15VJ/+LvqM4DE4qLjG9wqce1TIf7XWM6kSexUoniDSo1CDfl6Wk3lDOO3zXVK9vuSxcmfG0aM=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Wat-hd</Id>
+            <Name>Wat-hd</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAluSKJXRONEKn8M+LpZyedAAAAAAOAAAAVwBhAHQALQBoAGQAAAAQZgAAAAEAACAAAAD3MGRT4MNBioGpkwy44LYlZ/tFeHG4l9IVwB0RltwpgwAAAAAOgAAAAAIAACAAAADXnfdKD8a1R+4o/vyQLCVflutjFRDx73/ReSCRJKzw0yAAAACxxJtwD79tDkI1XsRP4hEP68D+HpwbPhvGkG0AXqRpF0AAAACGy2R8B1yrQTjiOckPBBETRzLkf8/OtqRUPwkVAOTZ2zD6HXIA1prLO9bUvnt1wjDKFniU/wHWNfzkTBVWYEzh</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost:2383</TargetServer>
+        <TargetDatabase>MultidimensionalHD</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

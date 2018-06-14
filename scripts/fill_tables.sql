@@ -24,14 +24,6 @@ VALUES(st.Year, st.Day, st.Month);
 GO
 
 --MediaGroup--
-UPDATE Programme 
-SET Channel = LEFT(Channel, CHARINDEX('[', Channel) - 1)
-WHERE CHARINDEX('[', Channel) > 0
-
-UPDATE Programme 
-SET Channel = LTRIM(RTRIM(Channel))
-
-
 MERGE Programme AS pro 
 USING ( select distinct Channel, MediaGroup from ProgrammeTmp p JOIN MediaGroup m ON p.MediaGroup = m.GroupName) as st
 ON pro.Channel=st.Channel
